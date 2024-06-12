@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fffloig || Navigation</title>
+    <link rel="stylesheet" href="assets/css/nav.css">
+</head>
+
+<body>
+    <a class="link" href="index.html" >fffloig</a>
+    <a class="link" href="#" >Get to know me</a>
+    <a class="link" href="#" >Contact Me</a>
+</body>
+<script src="assets/js/nav.js"></script>
+<script>
+    for (const link of document.getElementsByClassName("link")) {
+  link.onmousemove = e => {
+    const decimal = e.clientX / link.offsetWidth;
+
+    const basePercent = 80, percentRange = 20, adjustablePercent = percentRange * decimal;
+
+    const lightBluePercent = basePercent + adjustablePercent;
+
+    link.style.setProperty("--light-blue-percent", `${lightBluePercent}%`);
+  }
+}
+</script>
+</html>
