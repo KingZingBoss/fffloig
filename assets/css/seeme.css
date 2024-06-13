@@ -69,6 +69,7 @@ label {
 
 input[type=email], input[type=text] {
     width: 100%;
+    border: 1px solid var(--light-blue);
     background-color: var(--bg-color);
     color: var(--blue);
     transition: border-color 0.2s ease;
