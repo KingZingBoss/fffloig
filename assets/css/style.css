@@ -16,12 +16,14 @@ nav {
   margin: 32px;
   transition: border-radius 0.3s ease-in-out;
 }
-nav .ham{
+
+nav .ham {
   float: right;
   padding: 16px;
   transition: all 0.3s ease-in-out;
 }
-nav a{
+
+nav a {
   text-decoration: none;
   color: var(--blue);
   display: inline-block;
@@ -31,18 +33,22 @@ nav a{
   transition: all 0.3s ease-in-out;
   font-family: SF2;
 }
-nav a, nav a *{
+
+nav a,
+nav a * {
 
   cursor: url("../images/c2.svg") 12 12, auto !important;
 
 }
-nav a:hover{
+
+nav a:hover {
   color: var(--bg-color);
-  box-shadow: 0.25rem 0.25rem var(--bg-color),0.3rem 0.3rem var(--blue);
+  box-shadow: 0.25rem 0.25rem var(--bg-color), 0.3rem 0.3rem var(--blue);
   background-color: var(--blue);
   transition: all 0.3s ease-in-out;
 }
-.top{
+
+.top {
   border: 1px solid var(--blue);
   box-shadow: 0.3rem 0.3rem var(--blue);
   padding: 64px;
@@ -51,10 +57,12 @@ nav a:hover{
   text-align: center;
   color: white;
 }
-.top h1{
+
+.top h1 {
   font-family: "SF2";
 }
-.btns{
+
+.btns {
   border: 1px solid var(--blue);
   box-shadow: 0.3rem 0.3rem var(--blue);
   padding: 16px;
@@ -63,7 +71,8 @@ nav a:hover{
   text-align: center;
   color: white;
 }
-.btns a{
+
+.btns a {
   text-decoration: none;
   color: var(--bg-color);
   display: inline-block;
@@ -75,9 +84,18 @@ nav a:hover{
   transition: all 0.3s ease-in-out;
   font-family: SF2;
 }
-.btns a:hover{
+
+.btns a:hover {
   color: var(--bg-color);
-  box-shadow: 0.25rem 0.25rem var(--bg-color),0.3rem 0.3rem var(--blue);
+  box-shadow: 0.25rem 0.25rem var(--bg-color), 0.3rem 0.3rem var(--blue);
   background-color: var(--blue);
   transition: all 0.3s ease-in-out;
+}
+
+.top img {
+  border-radius: 50%;
+  width: 200px;
+  border: 1px solid var(--blue);
+  box-shadow: 0.5rem 0.5rem var(--blue);
+  cursor: url("../images/c2.svg") 12 12, auto !important;
 }
