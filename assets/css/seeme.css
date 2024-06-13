@@ -1,0 +1,134 @@
+@import url("general.css");
+
+body {
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--bg-color);
+}
+
+nav {
+    border: 1px solid var(--blue);
+    padding: 16px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0.3rem 0.3rem var(--blue);
+    margin: 32px;
+    transition: border-radius 0.3s ease-in-out;
+}
+
+nav .ham {
+    float: right;
+    padding: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--blue);
+    display: inline-block;
+    border-radius: 32px;
+    padding: 16px;
+    cursor: url("../images/c2.svg") 12 12, auto !important;
+    transition: all 0.3s ease-in-out;
+    font-family: SF2;
+}
+
+nav a,
+nav a * {
+
+    cursor: url("../images/c2.svg") 12 12, auto !important;
+
+}
+
+nav a:hover {
+    color: var(--bg-color);
+    box-shadow: 0.25rem 0.25rem var(--bg-color), 0.3rem 0.3rem var(--blue);
+    background-color: var(--blue);
+    transition: all 0.3s ease-in-out;
+}
+
+.top {
+    border: 1px solid var(--blue);
+    box-shadow: 0.3rem 0.3rem var(--blue);
+    padding: 64px;
+    border-radius: 30px;
+    margin: 32px;
+    text-align: center;
+    color: white;
+}
+
+.top h1 {
+    font-family: "SF2";
+}
+
+label {
+    display: block;
+    transform: translate(0, -2.75rem);
+}
+
+input[type=email], input[type=text] {
+    width: 100%;
+    background-color: var(--bg-color);
+    color: var(--blue);
+    transition: border-color 0.2s ease;
+    padding: 16px;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+    outline: none;
+    background-color: white;
+}
+
+
+@supports (not (-ms-ime-align:auto)) {
+    label {
+        color: var(--light-blue);
+        transform: translate(0.25rem, -1.5rem);
+        transition: all 0.2s ease-out;
+    }
+
+    input[type=text]:not(:placeholder-shown)+label, input[type=email]:not(:placeholder-shown)+label{
+        color: var(--blue);
+        transform: translate(0, -2.75rem);
+    }
+}
+
+form{
+    border: 1px solid var(--blue);
+    box-shadow: 0.3rem 0.3rem var(--blue);
+    padding: 64px;
+    border-radius: 30px;
+    margin: 32px;
+    text-align: center;
+    color: white;
+}
+form p{
+    font-family: "Slim";
+}
+input[type=submit] {
+    text-decoration: none;
+    background-color: var(--blue);
+    border: none;
+    width: 30%;
+    color: var(--bg-color);
+    display: inline-block;
+    border-radius: 32px;
+    padding: 16px;
+    cursor: url("../images/c2.svg") 12 12, auto !important;
+    transition: all 0.3s ease-in-out;
+    font-family: SF2;
+}
+input[type=submit] {
+
+    cursor: url("../images/c2.svg") 12 12, auto !important;
+
+}
+
+input[type=submit]:hover {
+    color: var(--bg-color);
+    box-shadow: 0.25rem 0.25rem var(--bg-color), 0.3rem 0.3rem var(--blue);
+    width: 50%;
+    background-color: var(--blue);
+    transition: all 0.3s ease-in-out;
+}

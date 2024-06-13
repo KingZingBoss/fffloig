@@ -23,16 +23,19 @@ body {
   font-size: clamp(2em, 8vmin, 7em);
   padding: 64px;
   position: relative;
+  transition: all 0.5s ease-in-out;
   text-decoration: none;
 }
 
 .link:hover {
   color: var(--light-blue);
+  transition: all 0.5s ease-in-out;
 }
 
 .link:hover:before {
   transition: width 600ms ease;
   width: 100%; 
+  transition: all 0.5s ease-in-out;
 }
 
 .link:before {
@@ -46,10 +49,15 @@ body {
   left: 0px;
   top: 0px;
   height: 100%;
+  transition: all 0.5s ease-in-out;
   width: 0%;
   position: absolute;
 }
 
 .link:nth-child(3) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+a{
+  cursor: url("../images/c2.svg") !important;
 }

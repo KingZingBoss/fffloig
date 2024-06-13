@@ -27,23 +27,57 @@ nav a{
   display: inline-block;
   border-radius: 32px;
   padding: 16px;
-  cursor: url("../images/c2.svg") 12 12, auto;
+  cursor: url("../images/c2.svg") 12 12, auto !important;
   transition: all 0.3s ease-in-out;
   font-family: SF2;
 }
+nav a, nav a *{
+
+  cursor: url("../images/c2.svg") 12 12, auto !important;
+
+}
 nav a:hover{
   color: var(--bg-color);
+  box-shadow: 0.25rem 0.25rem var(--bg-color),0.3rem 0.3rem var(--blue);
   background-color: var(--blue);
   transition: all 0.3s ease-in-out;
 }
 .top{
+  border: 1px solid var(--blue);
+  box-shadow: 0.3rem 0.3rem var(--blue);
   padding: 64px;
+  border-radius: 30px;
+  margin: 32px;
   text-align: center;
   color: white;
 }
 .top h1{
   font-family: "SF2";
 }
-nav i{
-  cursor: url("");
+.btns{
+  border: 1px solid var(--blue);
+  box-shadow: 0.3rem 0.3rem var(--blue);
+  padding: 16px;
+  border-radius: 30px;
+  margin: 32px;
+  text-align: center;
+  color: white;
+}
+.btns a{
+  text-decoration: none;
+  color: var(--bg-color);
+  display: inline-block;
+  border-radius: 32px;
+  padding: 16px;
+  margin: 2px;
+  background-color: var(--blue);
+  cursor: url("../images/c2.svg") 12 12, auto !important;
+  transition: all 0.3s ease-in-out;
+  font-family: SF2;
+}
+.btns a:hover{
+  color: var(--bg-color);
+  box-shadow: 0.25rem 0.25rem var(--bg-color),0.3rem 0.3rem var(--blue);
+  background-color: var(--blue);
+  transition: all 0.3s ease-in-out;
 }

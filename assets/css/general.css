@@ -5,6 +5,10 @@
     cursor: url("../images/c1.svg") 12 12, auto;
 }
 
+html {
+    cursor: url("../images/c1.svg") 12 12, auto;
+}
+
 @font-face {
     font-family: SF;
     src: url("../fonts/StudioFeixenSans-Regular.83774609.woff2");
@@ -17,8 +21,40 @@
     src: url("../fonts/studiofeixensansedgytrial-regular-webfont.584d8b9a.woff2");
 }
 
+@font-face {
+    font-family: Slim;
+    src: url("../fonts/StudioFeixenSans-Book.5d7370a8.woff2");
+}
+
 :root {
     --blue: #3cb371;
     --light-blue: #8fdab0;
     --bg-color: rgb(10, 10, 20);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    cursor: url("../images/c1.svg") 12 12, auto;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+    cursor: url("../images/c1.svg") 12 12, auto;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--light-blue);
+    cursor: url("../images/c1.svg") 12 12, auto;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--light-blue);
+    cursor: url("../images/c1.svg") 12 12, auto;
+}
+
+a {
+    cursor: url("../images/c2.svg") !important;
 }

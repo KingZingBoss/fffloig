@@ -1,0 +1,75 @@
+@import url("general.css");
+
+body {
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--bg-color);
+}
+
+nav {
+    border: 1px solid var(--blue);
+    padding: 16px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0.3rem 0.3rem var(--blue);
+    margin: 32px;
+    transition: border-radius 0.3s ease-in-out;
+}
+
+nav .ham {
+    float: right;
+    padding: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--blue);
+    display: inline-block;
+    border-radius: 32px;
+    padding: 16px;
+    cursor: url("../images/c2.svg") 12 12, auto !important;
+    transition: all 0.3s ease-in-out;
+    font-family: SF2;
+}
+
+nav a,
+nav a * {
+
+    cursor: url("../images/c2.svg") 12 12, auto !important;
+
+}
+
+nav a:hover {
+    color: var(--bg-color);
+    box-shadow: 0.25rem 0.25rem var(--bg-color), 0.3rem 0.3rem var(--blue);
+    background-color: var(--blue);
+    transition: all 0.3s ease-in-out;
+}
+
+.top {
+    border: 1px solid var(--blue);
+    box-shadow: 0.3rem 0.3rem var(--blue);
+    padding: 64px;
+    border-radius: 30px;
+    margin: 32px;
+    text-align: center;
+    color: white;
+}
+
+.top h1 {
+    font-family: "SF2";
+}
+.bottom{
+    border: 1px solid var(--blue);
+    box-shadow: 0.3rem 0.3rem var(--blue);
+    padding: 64px;
+    border-radius: 30px;
+    margin: 32px;
+    text-align: center;
+    color: white;
+}
+.bottom p{
+    font-family: "Slim";
+}
